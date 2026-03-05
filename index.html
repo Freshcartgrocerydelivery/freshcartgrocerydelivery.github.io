@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshCart Grocery Delivery</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f8f8f8;
+color:#333;
+}
+
+header{
+background:#2ecc71;
+padding:20px;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+margin:0;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:#eafaf1;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.button{
+background:#2ecc71;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.product{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.product img{
+width:100%;
+border-radius:6px;
+}
+
+.product h3{
+margin:10px 0;
+}
+
+.add-btn{
+background:#ff7a00;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.steps{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+}
+
+.step{
+max-width:200px;
+}
+
+.testimonials{
+max-width:800px;
+margin:auto;
+}
+
+.review{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>FreshCart</h1>
+<nav>
+<a href="#">Shop</a>
+<a href="#">How it Works</a>
+<a href="#">About</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<h2>Fresh Groceries Delivered to Your Door</h2>
+
+<p>Order fresh fruits, vegetables, and everyday essentials online. Pickup or delivery available.</p>
+
+<a class="button" href="#">Start Shopping</a>
+
+</section>
+
+<section class="section">
+
+<h2>Popular Groceries</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+<h3>Apples</h3>
+<p>₦1200</p>
+<button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+<h3>Bread</h3>
+<p>₦800</p>
+<button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1585238342028-4c1d2f1e8d1c">
+<h3>Milk</h3>
+<p>₦1500</p>
+<button class="add-btn">Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1604908176997-431a7e2c8d3b">
+<h3>Eggs</h3>
+<p>₦2000</p>
+<button class="add-btn">Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Browse Groceries</h3>
+<p>Choose fresh groceries from our online store.</p>
+</div>
+
+<div class="step">
+<h3>2. Choose Delivery</h3>
+<p>Select pickup or home delivery.</p>
+</div>
+
+<div class="step">
+<h3>3. Receive Fresh Food</h3>
+<p>We carefully pack and deliver your order.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section testimonials">
+
+<h2>What Customers Say</h2>
+
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️  
+Fast delivery and very fresh groceries.
+</div>
+
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️  
+Super convenient and saves me hours every week.
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 FreshCart Grocery Delivery</p>
+
+<p>Contact | FAQ | Delivery Policy</p>
+
+</footer>
+
+</body>
+
+</html>
