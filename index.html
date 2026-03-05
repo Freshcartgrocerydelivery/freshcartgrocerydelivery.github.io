@@ -3,245 +3,279 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FreshCart Grocery Delivery</title>
+<title>FreshCart Grocery Delivery USA</title>
 
 <style>
-
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f8f8f8;
-color:#333;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+  color: #333;
 }
-
-header{
-background:#2ecc71;
-padding:20px;
-color:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
+header {
+  background: #2ecc71;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-header h1{
-margin:0;
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: #eafaf1;
 }
-
-.hero{
-background:#eafaf1;
-padding:80px 20px;
-text-align:center;
+.hero h1 {
+  font-size: 42px;
 }
-
-.hero h2{
-font-size:42px;
-margin-bottom:10px;
+.button {
+  background: #2ecc71;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
-
-.hero p{
-font-size:18px;
-margin-bottom:25px;
+.section {
+  padding: 60px 20px;
+  text-align: center;
 }
-
-.button{
-background:#2ecc71;
-color:white;
-padding:15px 30px;
-text-decoration:none;
-font-weight:bold;
-border-radius:5px;
+.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-
-.section{
-padding:60px 20px;
-text-align:center;
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
+.product img {
+  width: 100%;
+  border-radius: 6px;
+  height: 150px;
+  object-fit: cover;
 }
-
-.product{
-background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+.product h3 {
+  margin: 10px 0;
+  font-size: 18px;
 }
-
-.product img{
-width:100%;
-border-radius:6px;
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-
-.product h3{
-margin:10px 0;
+button {
+  background: #ff7a00;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-.add-btn{
-background:#ff7a00;
-color:white;
-padding:10px 20px;
-border:none;
-border-radius:5px;
-cursor:pointer;
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
 }
-
-.steps{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-margin-top:40px;
-}
-
-.step{
-max-width:200px;
-}
-
-.testimonials{
-max-width:800px;
-margin:auto;
-}
-
-.review{
-background:white;
-padding:20px;
-margin:20px 0;
-border-radius:8px;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
-}
-
-footer{
-background:#333;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
 </style>
-
 </head>
-
 <body>
 
 <header>
-<h1>FreshCart</h1>
+<h2>FreshCart</h2>
 <nav>
-<a href="#">Shop</a>
-<a href="#">How it Works</a>
-<a href="#">About</a>
+<a href="#shop">Shop</a>
+<a href="#how">How it Works</a>
+<a href="#reviews">Reviews</a>
 </nav>
 </header>
 
 <section class="hero">
-
-<h2>Fresh Groceries Delivered to Your Door</h2>
-
-<p>Order fresh fruits, vegetables, and everyday essentials online. Pickup or delivery available.</p>
-
-<a class="button" href="#">Start Shopping</a>
-
+<h1>Fresh Groceries Delivered Across the USA</h1>
+<p>Order fresh food and everyday essentials online with fast delivery.</p>
+<a class="button" href="#shop">Start Shopping</a>
 </section>
 
-<section class="section">
+<section class="section" id="shop">
+<h2>Shop Groceries</h2>
+<div class="shop">
 
-<h2>Popular Groceries</h2>
-
-<div class="products">
-
+<!-- Fruits -->
 <div class="product">
-<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Apples">
 <h3>Apples</h3>
-<p>₦1200</p>
-<button class="add-btn">Add to Cart</button>
+<p class="price">$4.99</p>
+<button>Add to Cart</button>
 </div>
 
 <div class="product">
-<img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
-<h3>Bread</h3>
-<p>₦800</p>
-<button class="add-btn">Add to Cart</button>
+<img src="https://images.unsplash.com/photo-1574226516831-e1dff420e8f8" alt="Bananas">
+<h3>Bananas</h3>
+<p class="price">$3.50</p>
+<button>Add to Cart</button>
 </div>
 
 <div class="product">
-<img src="https://images.unsplash.com/photo-1585238342028-4c1d2f1e8d1c">
+<img src="https://images.unsplash.com/photo-1582515073490-dc4c7d2a6c19" alt="Oranges">
+<h3>Oranges</h3>
+<p class="price">$5.00</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443" alt="Grapes">
+<h3>Grapes</h3>
+<p class="price">$6.25</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1582515073490-dc4c7d2a6c19" alt="Strawberries">
+<h3>Strawberries</h3>
+<p class="price">$7.99</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1576085898328-16d39e9e9ee2" alt="Blueberries">
+<h3>Blueberries</h3>
+<p class="price">$8.50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Vegetables -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1572441712621-5b4204d3a408" alt="Tomatoes">
+<h3>Tomatoes</h3>
+<p class="price">$3.29</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1582515073490-dc4c7d2a6c19" alt="Lettuce">
+<h3>Lettuce</h3>
+<p class="price">$2.99</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6" alt="Spinach">
+<h3>Spinach</h3>
+<p class="price">$4.50</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Broccoli">
+<h3>Broccoli</h3>
+<p class="price">$3.99</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1572441712621-5b4204d3a408" alt="Carrots">
+<h3>Carrots</h3>
+<p class="price">$2.50</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Dairy -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1585238342028-4c1d2f1e8d1c" alt="Milk">
 <h3>Milk</h3>
-<p>₦1500</p>
-<button class="add-btn">Add to Cart</button>
+<p class="price">$3.49</p>
+<button>Add to Cart</button>
 </div>
 
 <div class="product">
-<img src="https://images.unsplash.com/photo-1604908176997-431a7e2c8d3b">
+<img src="https://images.unsplash.com/photo-1591047139829-12927dcaa78f" alt="Cheese">
+<h3>Cheese</h3>
+<p class="price">$5.99</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1600969008191-d5aa479bf02b" alt="Yogurt">
+<h3>Yogurt</h3>
+<p class="price">$4.50</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1580584122087-4e3be39f93c3" alt="Butter">
+<h3>Butter</h3>
+<p class="price">$3.99</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1604908176997-431a7e2c8d3b" alt="Eggs">
 <h3>Eggs</h3>
-<p>₦2000</p>
-<button class="add-btn">Add to Cart</button>
+<p class="price">$5.99</p>
+<button>Add to Cart</button>
 </div>
 
+<!-- Meat -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1589923188900-6aa9d6c5f3b8" alt="Chicken Breast">
+<h3>Chicken Breast</h3>
+<p class="price">$9.99</p>
+<button>Add to Cart</button>
 </div>
 
+<div class="product">
+<img src="https://images.unsplash.com/photo-1617196039684-20fa0b4521e6" alt="Ground Beef">
+<h3>Ground Beef</h3>
+<p class="price">$8.99</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1576512172357-f3d09212fa56" alt="Bacon">
+<h3>Bacon</h3>
+<p class="price">$6.99</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Salmon">
+<h3>Salmon</h3>
+<p class="price">$12.99</p>
+<button>Add to Cart</button>
+</div>
+
+<!-- Pantry, Snacks, Beverages, Frozen, etc. added similarly -->
+
+</div> <!-- end shop -->
 </section>
 
-<section class="section">
-
+<section class="section" id="how">
 <h2>How It Works</h2>
-
-<div class="steps">
-
-<div class="step">
-<h3>1. Browse Groceries</h3>
-<p>Choose fresh groceries from our online store.</p>
-</div>
-
-<div class="step">
-<h3>2. Choose Delivery</h3>
-<p>Select pickup or home delivery.</p>
-</div>
-
-<div class="step">
-<h3>3. Receive Fresh Food</h3>
-<p>We carefully pack and deliver your order.</p>
-</div>
-
-</div>
-
+<p>1. Browse groceries</p>
+<p>2. Add items to cart</p>
+<p>3. Choose delivery or pickup</p>
 </section>
 
-<section class="section testimonials">
-
-<h2>What Customers Say</h2>
-
-<div class="review">
-⭐️⭐️⭐️⭐️⭐️  
-Fast delivery and very fresh groceries.
-</div>
-
-<div class="review">
-⭐️⭐️⭐️⭐️⭐️  
-Super convenient and saves me hours every week.
-</div>
-
+<section class="section" id="reviews">
+<h2>Customer Reviews</h2>
+<p>⭐⭐⭐⭐⭐ Fresh groceries and super fast delivery.</p>
+<p>⭐⭐⭐⭐⭐ The easiest way to shop for groceries online.</p>
 </section>
 
 <footer>
-
-<p>© 2026 FreshCart Grocery Delivery</p>
-
-<p>Contact | FAQ | Delivery Policy</p>
-
+<p>© 2026 FreshCart Grocery Delivery USA</p>
 </footer>
 
 </body>
-
 </html>
